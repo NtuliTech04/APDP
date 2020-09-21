@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Online Booking</title>
+    <link rel="stylesheet" href="css/Booking.css" />
+</head>
+<body>
+    <div>
+        <!------------------------------------------Online Booking Page---------------------------------------->
+
+        <div class="Bookform">
+            <h1>Book Driving Lessons</h1>
+        </div>
+        <div class="Main">
+            <form method="post">
+                <div class="Reg_No">
+                    <label for="RegNo">Registration Number:</label>
+                    <input id="txtReg" type="text" />
+                </div>
+                <div class="Names">
+                    <label for="Username">Full Name:</label>
+                    <input id="names" type="text" />
+                </div>
+                <div class="DOB">
+                    <label for="Birth">DOB</label>
+                    <input id="birth" type="date" />
+                </div>
+                <div class="MobNo">
+                    <label for="Mobile">Mobile No.</label>
+                    <input id="MobNo" type="number" />
+                </div>
+                <div class="DL_Books">
+                    <h3>Basic Driving</h3>
+                    <div class="V_Type">
+                        <label for="Vehicle">Vehicle Type</label><br />
+                        <select id="V_Type">
+                            <option>--Select--</option>
+                            <option>Light Motor Vehicle</option>
+                            <option>Heavy Motor Vehicle</option>
+                            <option>Extra Heavy MV with Trailer</option>
+                        </select>
+                    </div>
+                    <div class="VCtrl">
+                        <label for="V_Ctrl">Vehicle Control</label><br />
+                        <div class="Rect_Container">
+                            <input id="Nrm" type="radio" name="VCtrl" value="Normal Vehicle" />&nbsp;Normal Vehicle<br />
+                            <input id="Adpt" type="radio" name="VCtrl" value="Adapted Vehicle" />&nbsp;Adapted Vehicle
+                        </div>
+                        <p class="HelpText">*Adapted vehicle - Persons with disability</p>
+                    </div>
+                    <div class="Adv_Drive">
+                        <h3>Advanced Driving</h3>
+                        <div class="S_Type">
+                            <label for="skills">Skill Type</label>
+                            <div class="Rect_Container">
+                                <input id="4X4" type="radio" name="Skill" value="4by4" />&nbsp;4X4<br />
+                                <input id="Anti" type="radio" name="Skill" value="Hijack" />&nbsp;Anti-Hijack<br />
+                                <input id="defence" type="radio" name="Skill" value="Defense" />&nbsp;Defensive Driving
+                            </div>
+                        </div>
+                    </div>
+                    <div class="BookSlot">
+                        <label for="slot">Date&Time Slot</label>
+                        <div class="Slot_Container">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <b>Date</b>
+                                    </td>
+                                    <td>
+                                        <b>Time</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="Bookdate" type="date" />
+                                    </td>
+                                    <td>
+                                        <input id="Bookdate" type="time" />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>   
+                <div class="smtBook">
+                    <input id="book" type="submit" value="Book Slot"/>
+                </div>
+                <div class="cancel">
+                    <input id="cncl" type="submit" value="Cancel" />
+                </div>                   
+            </form>
+        </div>
+
+        <!-----------------------------------------------Booking End------------------------------------------->
+    </div>
+</body>
+</html>

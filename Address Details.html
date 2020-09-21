@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Cont.</title>
+    <link rel="stylesheet" href="css/Reg_Style.css" />
+</head>
+<body>
+    <div>
+        <!-----------------------------------------------------------------------------Address Details GUI----------------------------------------------------------------------------------------->
+        <form method="post">
+            <table class="Position">
+                <tr>
+                    <td class="Header1">
+                        <div class="Heading1">Address Details</div>
+                    </td>
+                    <td class="Header2">
+                        <div class="Heading2">Timeslots</div>
+                    </td>
+                    <td class="line">
+                        <hr style="border-width: 2px" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <div class="Str_Ad">
+                Address 1:
+                <input id="txtAdd1" type="text" placeholder="Street Address, PO Box, Company name" /><br />
+                <br />
+                <br />
+                Address 2:
+                <input id="txtAdd2" type="text" placeholder="Appartment, Suite, Unit, Building, Floor, ect." />
+            </div>
+            <div class="Ad_City">
+                City:
+                <input id="txtCity" type="text" />
+            </div>
+            <div class="Prov">
+                Province:
+                <select id="Prov" name="Province">
+                    <option value="select">--Select--</option>
+                    <option value="EC">Eastern Cape</option>
+                    <option value="FS">Free State</option>
+                    <option value="GP">Gauteng</option>
+                    <option value="KZN">KwaZulu-Natal</option>
+                    <option value="LMP">Limpopo</option>
+                    <option value="MP">Mpumalanga</option>
+                    <option value="NC">Northern Cape</option>
+                    <option value="PLK">North West</option>
+                    <option value="WC">Western Cape</option>
+                </select>
+            </div>
+            <div class="Code">
+                Postal Code:
+                <input id="txtCode" type="text" />
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="rectangle">
+                <div class="UploadInfo">
+                    <h4>Upload Files</h4>
+                    <br />
+                    <p class="Caption">Upload a Proof of Resident:</p>
+                    <br />
+                    <input id="Adrs_Doc" type="file" /><br />
+                    <input id="BtnUpload" type="submit" value="Upload Now" />
+                </div>
+            </div>
+            <div class="CntrlBtn1">
+                <input id="Register" type="submit" value="Submit Registraion" />
+            </div>
+            <div class="CntrlBtn2">
+                <input id="Prev" type="submit" value="Previous" />
+            </div>
+            <div class="CntrlBtn3">
+                <input id="cncl1" type="submit" value="Cancel" />
+            </div>
+        </form>
+        <!-------------------------------------------------------------------------------- GUI End----------------------------------------------------------------------------------------->
+
+    </div>
+</body>
+</html>

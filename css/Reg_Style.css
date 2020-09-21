@@ -1,0 +1,439 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans',sans-serif;
+    background-color: #d3d3d3;
+   
+}
+/*-----------------------------------------Personal Details------------------------------------------*/
+
+.Header1 {
+    overflow: hidden;
+    background-color: #cb3232;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 10vw;
+    padding: 13px 7px;
+}
+
+.Heading1 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.Header2 {
+    overflow: hidden;
+    background-color: #515151;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 10vw;
+    padding: 13px 7px;
+}
+
+.Heading2 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.Position {
+    margin-top: 3vh;
+    margin-left: 2vw;
+}
+
+.line {
+    width: 80%;
+    padding-top: 3%;
+}
+.Gender_Rect {
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    height: auto;
+    width: auto;
+    min-width: inherit;
+    padding-right: 7vw;
+}
+.Gender{
+    display:inline-flex;
+}
+#GenderPanel {
+    padding-top: 7px;
+    padding-left: 5px;
+    display: inline-block;
+}
+#GenderPanel input {
+        margin-bottom: 10px;
+        cursor:pointer;
+}
+.rectangle {
+    height: 30vh;
+    width: 35vw;
+    border: 2px solid #d42828;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.UploadInfo h4 {
+    font-size: 25px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.Caption {
+    font-size: 15px;
+    padding-left: 4px;
+}
+
+#ID_Doc, #Adrs_Doc {
+    padding-left: 2vw;
+}
+#BtnUpload {
+    margin-left: 2vw;
+    padding: 7px 5px;
+    margin-top: 3vh;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+#BtnUpload:hover {
+    color: #515151;
+    border: 1px solid #d42828;
+}
+.lblnames{
+    font-size:15px;
+    font-weight:bold;
+    display:flex;
+    margin-left:2vw;
+    margin-top:3vh;
+}
+.lblnames input {
+        height: 5vh;
+        width: 22vw;
+        font-size: 15px;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+        margin-left: 30px;
+        padding-left:4px;
+}
+.Gender{
+    font-size: 15px;
+    display: flex;
+    margin-left: 3.3vw;
+    margin-top: 7vh;
+}
+.Gender_Rect{
+    margin-left:2.3vw;
+}
+.Age{
+   margin-left:35vw;
+   margin-top:-12vh;
+   margin-bottom:5vh;
+   font-weight:bold;
+   font-size:15px;
+}
+#DOB {
+    height: 5vh;
+    width: 17.5vw;
+    font-size: 15px;
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    margin-bottom:2vh;
+}
+#Age {
+    height: 5vh;
+    width: 7vw;
+    font-size: 15px;
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    margin-left:5px;
+}
+.Nation{
+    margin-left:1vw;
+}
+.Nation select {
+    height: 5vh;
+    width: 12vw;
+    font-size: 15px;
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    margin-left:2vw;
+}
+#Country1 {
+    height: 5vh;
+    width: 17.5vw;
+    font-size: 15px;
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    margin-left: 16vw;
+}
+.HelpText{
+    font-size:13px;
+    margin-left:37vw;
+}
+.Race{
+    font-size:15px;
+    font-weight:bold;
+    margin-left:4.5vw;
+    margin-top:2vh;
+}
+.Race select {
+        margin-left: 2vw;
+        height: 5vh;
+        width: 12vw;
+        margin-bottom:2vh;
+        font-size: 15px;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+}
+.ID_Passport{
+    margin-left:10vw;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:2vh;
+}
+.ID_Passport input {
+        height: 4vh;
+        width: 16.5vw;
+        font-size: 15px;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+        margin-left:2vw;
+        margin-bottom:4vh;
+}
+.Contact{
+    font-size:15px;
+    font-weight:bold;
+    margin-left:10vw;
+}
+.Contact input {
+        margin-bottom: 2vh;
+        height: 4vh;
+        width: 10vw;
+        font-size: 15px;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+ }
+#Tel_No{
+    margin-left:1vw;
+}
+#Mobile_No{
+    margin-left:2.8vw;
+}
+#Email{
+    width:16.5vw;
+    margin-left:3vw;
+}
+.ID_Marks{
+    text-align:right;
+    font-size:15px;
+    font-weight:bold;
+    margin-right:15vw;
+    margin-top:-15vh;
+    margin-bottom:10vh;
+}
+.ID_Marks input {
+        margin-bottom: 2vh;
+        height: 5vh;
+        width: 15vw;
+        font-size: 15px;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+}
+.CtrlBtn1{
+    margin-left:40vw;
+    margin-top:-23vh;
+    margin-bottom:17vh;
+}
+#nxt {
+    background-color: #5390F5;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    padding: 10px 50px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: ease;
+}
+    #nxt:hover {
+        background-color: #3BAF9F;
+        transition: ease;
+        font-weight: bold;
+    }
+.CtrlBtn2 {
+    margin-left: 60vw;
+    margin-top: -26.5vh;
+    margin-bottom: 17vh;
+}
+
+#cncl {
+    background-color: #cb3232;
+    margin: 20px 0px 0px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    padding: 10px 50px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: ease;
+}
+
+    #cncl:hover {
+        background-color: #aa0909;
+        font-weight: bold;
+        transition: ease;
+    }
+
+
+
+/*-----------------------------------------Personal Details End------------------------------------------*/
+
+/*--------------------------------------------Address Details-------------------------------------------*/
+
+.Str_Ad {
+    display:inline-block;
+    margin-left: 3vw;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Str_Ad input {
+        height: 5vh;
+        width: 25vw;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+        margin-left: 2vw;
+        padding-left:5px;
+}
+.Ad_City {
+    margin-left: 6vw;
+    font-size: 15px;
+    margin-top: 2.5vh;
+    font-weight: bold;
+    font-size: 15px;
+}
+#txtCity {
+    height: 5vh;
+    width: 15vw;
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    margin-left: 2vw;
+}
+.Prov {
+    margin-left: 3.5vw;
+    font-weight: bold;
+    font-size: 15px;
+}
+.Prov select {
+        height: 4vh;
+        width: 10vw;
+        border: 2px solid #d42828;
+        border-radius: 5px;
+        margin-left: 2vw;
+        margin-top: 3vh;
+}
+.Code {
+    margin-left: 1.8vw;
+    font-weight: bold;
+    font-size: 15px;
+}
+#txtCode {
+    height: 4vh;
+    width: 5vw;
+    border: 2px solid #d42828;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-top: 3vh;
+}
+.CntrlBtn1{
+    text-align:center;
+    margin-left:20vw;
+    margin-top:-27vh;
+    margin-bottom:25vh;
+}
+    .CntrlBtn1 input {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 13px;
+        background-color: #3BAF9F;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 10px 50px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: ease;
+    }
+.CntrlBtn1 input:hover {
+            background-color: #5390F5;
+            padding-left:47px;
+            padding-right:47px;
+            transition:ease;
+}
+.CntrlBtn2 {
+    text-align: center;
+    margin-left: 1vw;
+    margin-top: -22vh;
+    margin-bottom: 10vh;
+}
+.CntrlBtn2 input {
+        font-size: 13px;
+        background-color: #db6613;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 10px 40px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: ease;
+}
+.CntrlBtn2 input:hover {
+    background-color: #ff6a00;
+    transition: ease;
+}
+.CntrlBtn3{
+    text-align:center;
+    margin-left: 39vw;
+    margin-top:-19.5vh;
+    margin-bottom:10vh;
+}
+.CntrlBtn3 input {
+        font-size:13px;
+        background-color: #cb3232;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #ffffff;
+        padding: 10px 40px;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: ease;
+}
+.CntrlBtn3 input:hover {
+        background-color: #aa0909;
+        transition: ease;
+}
+
+
+
+
+    /*------------------------------------------Address Details End-----------------------------------------*/
+

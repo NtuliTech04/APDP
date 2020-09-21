@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/Reg_Style.css" />
+</head>
+<body>
+    <div>
+
+        <!-----------------------------------------------------------------------------Personal Details GUI----------------------------------------------------------------------------------------->
+        <form method="post">
+            <table class="Position">
+                <tr>
+                    <td class="Header1">
+                        <div class="Heading1">Personal Details</div>
+                    </td>
+                    <td class="Header2">
+                        <div class="Heading2">Address Details</div>
+                    </td>
+                    <td class="line">
+                        <hr style="border-width: 2px" />
+                    </td>
+                </tr>
+            </table>
+            <div class="lblnames">
+                Full Name:
+                <input id="F_name" type="text" placeholder="first name" />
+                <input id="M_name" type="text" placeholder="middle name" />
+                <input id="L_name" type="text" placeholder="last name" />
+            </div>
+            <div class="Gender">
+                <b>Gender:</b>
+                <div class="Gender_Rect">
+                    <asp:Panel ID="GenderPanel" runat="server">
+                        <input id="RadM" type="radio" name="gender" value="male" />&nbsp;Male<br />
+                        <input id="RadF" type="radio" name="gender" value="female" />&nbsp;Female<br />
+                        <input id="RadO" type="radio" name="gender" value="other" />&nbsp;Other<br />
+                    </asp:Panel>
+                </div>
+            </div>
+            <div class="Age">
+                DOB:
+                <input id="DOB" type="date" /><br />
+                Age:
+                <input id="Age" type="number" />
+            </div>
+            <div class="Nation">
+                <b>Nationality:</b>
+                <select id="Country" name="Nationality">
+                    <option value="select">--Select--</option>
+                    <option value="country">South Africa</option>
+                    <option value="country">Other</option>
+                </select>
+                <input id="Country1" type="text" placeholder="Other Nationality" /><br />
+                <p class="HelpText">*<b>IF NOT</b> South Africa</p>
+            </div>
+            <div class="Race">
+                Race:
+                <select id="race" name="Race">
+                    <option value="select">--Select--</option>
+                    <option value="race">African</option>
+                    <option value="race">Indian</option>
+                    <option value="race">Colored</option>
+                    <option value="race">White</option>
+                </select>
+            </div>
+            <div class="ID_Passport">
+                ID No. / Passport:
+                <input id="ID_No" type="text" placeholder="13 Digits Number" />
+            </div>
+            <div class="Contact">
+                Telephone Number:
+                <input id="Tel_No" type="tel" /><br />
+                Mobile Number:
+                <input id="Mobile_No" type="tel" /><br />
+                Email Address:
+                <input id="Email" type="email" /><br />
+            </div>
+            <div class="ID_Marks">
+                Identification Mark:
+                <input id="ID_Mark1" type="text" placeholder="Mark 1" /><br />
+                <input id="ID_Mark2" type="text" placeholder="Mark 2" /><br />
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div class="rectangle">
+                <div class="UploadInfo">
+                    <h4>Upload Files</h4>
+                    <br />
+                    <p class="Caption">Upload a Certified Copy of your ID document or Passport as proof:</p>
+                    <br />
+                    <input id="ID_Doc" type="file" /><br />
+                    <input id="BtnUpload" type="submit" value="Upload Now" />
+                </div>
+            </div>
+            <div class="CtrlBtn1">
+                <input id="nxt" type="submit" value="Next" />
+            </div>
+            <div class="CtrlBtn2">
+                <input id="cncl" type="submit" value="Cancel" />
+            </div>
+        </form>
+        <!-----------------------------------------------------------------------------------GUI End------------------------------------------------------------------------------------------------>
+
+    </div>
+</body>
+</html>
